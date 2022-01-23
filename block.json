@@ -1,5 +1,13 @@
 {
 	"$schema": "https://json.schemastore.org/block.json",
+	"attributes": {
+		"message": {
+			"type": "string",
+			"source": "text",
+			"selector": "div",
+			"default": ""
+		}
+	},
 	"apiVersion": 2,
 	"name": "create-block/gutenpride",
 	"version": "0.1.0",

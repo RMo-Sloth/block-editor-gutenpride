@@ -12,6 +12,7 @@ import { __ } from '@wordpress/i18n';
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
 import { useBlockProps } from '@wordpress/block-editor';
+import { parseWithAttributeSchema } from '@wordpress/blocks';
 
 /**
  * The save function defines the way in which the different attributes should
@@ -23,9 +24,5 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {WPElement} Element to render.
  */
 export default function save() {
-	return (
-		<p {...useBlockProps.save()}>
-			{__('Gutenpride – hello! from the saved content!', 'gutenpride')}
-		</p>
-	);
+	return <div { ...useBlockProps.save() }>{ attributes.message }</div>;
 }
