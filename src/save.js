@@ -23,6 +23,6 @@ import { parseWithAttributeSchema } from '@wordpress/blocks';
  *
  * @return {WPElement} Element to render.
  */
-export default function save() {
+export default function save( {attributes} ) {
 	return <div { ...useBlockProps.save() }>{ attributes.message }</div>;
 }
