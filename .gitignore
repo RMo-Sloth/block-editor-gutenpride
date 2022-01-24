@@ -1,3 +1,6 @@
+# deployment folder
+build/
+
 # Logs
 logs
 *.log
@@ -26,5 +29,3 @@ node_modules/
 # dotenv environment variables file
 .env
 
-# deployment folder
-build/
