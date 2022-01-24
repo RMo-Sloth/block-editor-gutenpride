@@ -24,3 +24,7 @@ function create_block_gutenpride_block_init() {
 	register_block_type( __DIR__ );
 }
 add_action( 'init', 'create_block_gutenpride_block_init' );
+
+add_action( 'wp_enqueue_scripts', function() {
+	wp_enqueue_style( 'gilbert-font', 'https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap' );
+});
